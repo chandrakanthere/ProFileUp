@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Resume Template</title>
+    <style>
+        /* Modern Resume Template CSS */
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --light-gray: #f5f5f5;
+            --border-color: #ddd;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: #fff;
+        }
+        
+        .resume-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        
+        /* Header Section */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+        
+        .header-left {
+            flex: 1;
+        }
+        
+        .header-right {
+            flex: 1;
+            text-align: right;
+        }
+        
+        .name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        
+        .title {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            margin-top: 15px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 5px;
+        }
+        
+        .contact-info i {
+            margin-right: 10px;
+            color: var(--primary-color);
+        }
+        
+        /* Summary Section */
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .summary p {
+            margin-bottom: 10px;
+        }
+        
+        /* Experience Section */
+        .experience-item, .education-item, .skill-item {
+            margin-bottom: 20px;
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .item-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .item-subtitle {
+            color: var(--secondary-color);
+            font-style: italic;
+        }
+        
+        .item-date {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+        
+        .item-description {
+            margin-top: 10px;
+        }
+        
+        .item-description ul {
+            padding-left: 20px;
+        }
+        
+        .item-description li {
+            margin-bottom: 5px;
+        }
+        
+        /* Skills Section */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .skill-category {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+        
+        .skill-category h4 {
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+        }
+        
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .skill-tag {
+            background-color: var(--light-gray);
+            color: var(--secondary-color);
+            padding: 5px 10px;
+            border-radius: 15px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .resume-container {
+                padding: 20px;
+            }
+            
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .header-right {
+                text-align: center;
+                margin-top: 20px;
+            }
+            
+            .item-header {
+                flex-direction: column;
+            }
+            
+            .item-date {
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- Header Section -->
+        <div class="header">
+            <div class="header-left">
+                <h1 class="name">John Doe</h1>
+                <h2 class="title">Senior Software Developer</h2>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> john.doe@example.com</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-map-marker-alt"></i> New York, NY</p>
+                </div>
+            </div>
+            <div class="header-right">
+                <p><i class="fas fa-globe"></i> www.johndoe.com</p>
+                <p><i class="fab fa-linkedin"></i> linkedin.com/in/johndoe</p>
+                <p><i class="fab fa-github"></i> github.com/johndoe</p>
+            </div>
+        </div>
+        
+        <!-- Summary Section -->
+        <div class="section">
+            <h3 class="section-title">Professional Summary</h3>
+            <div class="summary">
+                <p>Experienced software developer with over 8 years of expertise in web development, specializing in front-end technologies and responsive design. Proven track record of delivering high-quality, scalable applications that meet client needs and exceed expectations. Strong problem-solving skills and ability to work effectively in both team and independent settings.</p>
+            </div>
+        </div>
+        
+        <!-- Experience Section -->
+        <div class="section">
+            <h3 class="section-title">Work Experience</h3>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <div>
+                        <h4 class="item-title">Senior Software Developer</h4>
+                        <p class="item-subtitle">Tech Solutions Inc.</p>
+                    </div>
+                    <p class="item-date">Jan 2019 - Present</p>
+                </div>
+                <div class="item-description">
+                    <ul>
+                        <li>Lead developer for a team of 5, responsible for developing and maintaining the company's flagship product</li>
+                        <li>Implemented responsive design principles across all web applications, improving mobile user experience by 40%</li>
+                        <li>Reduced application load time by 25% through optimization of front-end code and implementation of lazy loading</li>
+                        <li>Mentored junior developers and conducted code reviews to ensure high-quality deliverables</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <div>
+                        <h4 class="item-title">Web Developer</h4>
+                        <p class="item-subtitle">Digital Innovations LLC</p>
+                    </div>
+                    <p class="item-date">Mar 2015 - Dec 2018</p>
+                </div>
+                <div class="item-description">
+                    <ul>
+                        <li>Developed and maintained 15+ client websites using HTML, CSS, JavaScript, and PHP</li>
+                        <li>Collaborated with UX designers to implement user-friendly interfaces that increased client satisfaction</li>
+                        <li>Integrated third-party APIs and services to enhance website functionality</li>
+                        <li>Participated in agile development processes, including daily stand-ups and sprint planning</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <div>
+                        <h4 class="item-title">Junior Developer</h4>
+                        <p class="item-subtitle">WebTech Solutions</p>
+                    </div>
+                    <p class="item-date">Jun 2013 - Feb 2015</p>
+                </div>
+                <div class="item-description">
+                    <ul>
+                        <li>Assisted in the development of responsive websites for small to medium-sized businesses</li>
+                        <li>Implemented front-end features using HTML, CSS, and JavaScript</li>
+                        <li>Conducted cross-browser testing to ensure compatibility across different platforms</li>
+                        <li>Participated in code reviews and implemented feedback to improve code quality</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Education Section -->
+        <div class="section">
+            <h3 class="section-title">Education</h3>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <div>
+                        <h4 class="item-title">Master of Science in Computer Science</h4>
+                        <p class="item-subtitle">Stanford University</p>
+                    </div>
+                    <p class="item-date">2011 - 2013</p>
+                </div>
+                <div class="item-description">
+                    <p>Specialized in Web Technologies and User Interface Design. Graduated with honors.</p>
+                </div>
+            </div>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <div>
+                        <h4 class="item-title">Bachelor of Science in Computer Engineering</h4>
+                        <p class="item-subtitle">University of California, Berkeley</p>
+                    </div>
+                    <p class="item-date">2007 - 2011</p>
+                </div>
+                <div class="item-description">
+                    <p>Minor in Business Administration. Dean's List for all semesters.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Skills Section -->
+        <div class="section">
+            <h3 class="section-title">Skills</h3>
+            
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h4>Programming Languages</h4>
+                    <div class="skill-list">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Frameworks & Libraries</h4>
+                    <div class="skill-list">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Angular</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">jQuery</span>
+                        <span class="skill-tag">Node.js</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Tools & Technologies</h4>
+                    <div class="skill-list">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Webpack</span>
+                        <span class="skill-tag">RESTful APIs</span>
+                        <span class="skill-tag">Agile/Scrum</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html> 
