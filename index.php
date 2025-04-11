@@ -61,11 +61,36 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             border-top-left-radius: 0;
             border-top-right-radius: 0;
         }
+        .about-section {
+            max-width: 500px;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 0.5rem;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        }
+        .container-custom {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 1rem;
+            width: 100%;
+        }
+        @media (max-width: 992px) {
+            .container-custom {
+                flex-direction: column;
+            }
+            .form-signin, .about-section {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body class="d-flex align-items-center">
-    <div class="w-100">
-        <main class="form-signin w-100 m-auto bg-white shadow rounded">
+    <div class="container-custom">
+        <main class="form-signin bg-white shadow rounded">
             <form method="POST">
                 <div class="d-flex gap-2 justify-content-center">
                     <img class="mb-4" src="logo.png" alt="" height="70">
@@ -95,6 +120,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </div>
             </form>
         </main>
+
+        <div class="about-section">
+            <h2 class="h4 mb-4">About ProFileUp</h2>
+            <p class="mb-3">Welcome to ProFileUp, your professional resume management platform designed to help you create, manage, and track your resumes with ease.</p>
+            
+            <h3 class="h5 mt-4 mb-3"><i class="bi bi-check-circle-fill text-primary"></i> Key Features</h3>
+            <ul class="list-unstyled">
+                <li class="mb-2"><i class="bi bi-check text-success"></i> Create multiple professional resumes</li>
+                <li class="mb-2"><i class="bi bi-check text-success"></i> Track resume views and downloads</li>
+                <li class="mb-2"><i class="bi bi-check text-success"></i> Easy-to-use template system</li>
+                <li class="mb-2"><i class="bi bi-check text-success"></i> Secure cloud storage</li>
+            </ul>
+            
+            <h3 class="h5 mt-4 mb-3"><i class="bi bi-people-fill text-primary"></i> Who Can Benefit?</h3>
+            <p>Whether you're a job seeker, freelancer, or professional looking to update your profile, ProFileUp provides the tools you need to stand out in today's competitive market.</p>
+            
+            <div class="mt-4 pt-3 border-top">
+                <p class="small text-muted m-0">Get started today and take control of your professional profile!</p>
+            </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
